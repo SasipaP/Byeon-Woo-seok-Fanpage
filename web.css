@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa; /* Soft Korean style color */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #ffffff; /* White background for header */
+    border-bottom: 1px solid #e1e4e8; /* Light border */
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ff6b6b; /* Soft red color */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 1.5rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #343a40; /* Dark gray color */
+    font-weight: bold;
+}
+
+.home-section {
+    position: relative;
+    height: calc(100vh - 60px); /* Full height minus header height */
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.image-container img {
+    width: 100%;
+    height: 80%;
+    object-fit: cover; /* Cover the entire section */
+    border-radius: 0; /* No border radius */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    color: #ffffff; /* White text */
+    text-align: center;
+}
+
+.overlay h1 {
+    font-family: 'Nanum Pen Script', cursive; /* Cute font */
+    font-size: 3rem; /* Larger font size */
+    margin-bottom: 1rem;
+}
+
+.overlay button {
+    
+    padding: 0.5rem 1rem;
+    background-color: #ff6b6b; /* Soft red color */
+    color: #ffffff;
+    border: none;
+    border-radius: 80px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.overlay button:hover {
+    border-radius: 80px;
+    background-color: #fc9a9a; /* Slightly lighter red on hover */
+}
